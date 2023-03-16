@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\lenovo\Desktop\GUVI GEEK\css\register.css">
+  </head>
+  <body>
+    <form id="signup-form" onsubmit="return validateForm()" action="C:\Users\lenovo\Desktop\GUVI GEEK\php\register.php" method="post">
+      <div class="container"> 
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center">Sign Up</h1>
+        
+          <label for="username">Username:</label>
+          <div class="form-group">
+            <input type="text" id="username" name="username" required>
+          </div>        
+         <label for="email">Email:</label>
+         <div class="form-group">
+            <input type="email" id="email" name="email" required>
+         </div>
+
+          <label for="password">Password:</label>
+         <div class="form-group">
+            <input type="password" id="password" name="password" minlength="8" required>
+         </div>
+
+          <label for="confirm_password">Confirm Password:</label>
+         <div class="form-group">
+          <input type="password" id="confirm_password" name="confirm_password" required>
+         </div>
+         <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+      </div>
+      
+    </form>
+    <script src="C:\Users\lenovo\Desktop\GUVI GEEK\js\register.js"></script>
+  </body>
+</html>
