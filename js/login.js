@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#login-form').submit(function(event) {
-        // prevent the form from submitting normally
+       
         event.preventDefault();
   
-        // get the username and password from the form
+        
         var username = $('#username').val();
         var password = $('#password').val();
         $user = localStorage.getItem('username');

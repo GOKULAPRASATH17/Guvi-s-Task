@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 
-// Create a new instance of express app
+
 const app = express();
 
 // Set up middleware to parse incoming request bodies
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const url = 'mongodb://localhost:27017';
 const dbName = 'myapp';
 
-// Define a route to handle signup form submission
+
 app.post('/profile', (req, res) => {
   // Get the user data from the request body
   const userData = req.body;
